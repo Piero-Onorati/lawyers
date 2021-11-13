@@ -36,6 +36,9 @@ Vue.use(IconsPlugin)
 
 Vue.use(VueAgile)
 
+const VueScrollTo = require('vue-scrollto')
+Vue.use(VueScrollTo)
+
 
 
 /**

@@ -58,15 +58,18 @@
             <div class="my-4">
 
               <!-- REVIEW NUMBER -->
-              <h5 v-if="lawyer.reviews" class="bg-dark d-inline p-1 rounded">
+              <h5 v-if="lawyer.reviews" class="btn-dark d-inline p-1 rounded">
                 <span class="badge position-relative">Reviews</span>
                 <span class="badge bg-secondary"> {{getNumberOfReview(lawyer.reviews)}}+</span>
               </h5>
-              
 
-              <div v-if="lawyer.reviews.length >= 1" class="mt-1 badge rounded-pill text-white position-relative mx-1">
-                Voto: <span>{{getVoteReview(lawyer.reviews).toFixed(1)}}</span>
-              </div>
+              <h5 v-if="lawyer.reviews.length >= 1" class="btn-light d-inline py-1 px-2 rounded position-relative m-2">
+                <i class="bi bi-star-fill" style="font-size:1.1rem"></i> 
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg_gold">
+                  {{getVoteReview(lawyer.reviews).toFixed(1)}}
+                </span>
+              </h5>
+
 
             </div>
 
@@ -307,6 +310,11 @@ export default {
 
       &:hover .lawyers_name{
         color:white;
+      }
+
+      .bg_gold{
+        background-color: #b69d73;
+        color:rgb(12, 20, 37);
       }
 
       .all-actions{

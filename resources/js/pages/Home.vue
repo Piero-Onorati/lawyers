@@ -8,10 +8,10 @@
         <div class="row align-items-center">
 
           <div id="welcome-text" class="col-12 col-md-6 hero_home_text">
-            <span class="span_text my-2">Consulenza Legale</span>
-            <h2 class="h2_text_light">Se hai un problema legale nella tua vita,</h2>
-            <h3 class="h3_text">noi siamo disponibili</h3>
-            <a href="#" class="btn border-light rounded-pill"><i class="bi bi-chat-fill"></i> get consultation</a>
+            <span class="span_text my-2">legal counseling</span>
+            <h2 class="h2_text_light y-3">If you have any legal problem in your life...</h2>
+            <h3 class="h3_text">we are available</h3>
+            <a  class="btn border-light rounded-pill mt-4" v-scroll-to="'#specialization_section'" ><i class="bi bi-chat-fill mx-1"></i> get consultation</a>
           </div>
 
         </div>
@@ -37,9 +37,9 @@
 
       </div>
      
-      <div class="container rounded specialization_section">
+      <div class="container rounded specialization_section" id="specialization_section">
 
-      <!-- BUTTONS FOR ALL THE SPECIALIZATIONS -->
+        <!-- BUTTONS FOR ALL THE SPECIALIZATIONS -->
         <div class="row">
           <div class="col-12 col-md-8 px-5">
             <span class="span_text"><i class="bi bi-dot me-5"></i> what we do</span>
@@ -59,6 +59,7 @@
           </router-link>
 
         </div>
+
       </div>
 
     </div>
@@ -71,7 +72,7 @@
             <div class="col-12 col-md-8">
               <span class="span_text"><i class="bi bi-dot me-5"></i> Attorneys</span>
               <h2 class="h2_text_dark">Best Attorneys</h2>
-              <p class="p_text">Lawyer Law Office, with its specialized staff and academic support, is divided into departments and continues to work systematically.</p>
+              <p class="p_text bg-white">Lawyer Law Office, with its specialized staff and academic support, is divided into departments and continues to work systematically.</p>
             </div>
           </div>
        </div>
@@ -236,8 +237,9 @@ export default {
 
   .h2_text_light{
     color:#ddd;
-    font-weight:bold;
+    line-height: 50px;
     font-size: 40px;
+    padding-top:10px;
   }
 
   .h2_text_dark{
@@ -258,6 +260,10 @@ export default {
     letter-spacing: 1px;
     line-height: 26px;
     color:#000223
+  }
+
+  .bg-white{
+    background-color: rgba(255, 255, 255,0.5);
   }
 
   #welcome-text {
